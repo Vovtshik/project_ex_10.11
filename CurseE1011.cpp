@@ -30,7 +30,7 @@ void reading_numbers(string name_file, vector<int>numbers)
         ist >> ch;
         if(ist.eof())
             break;
-        if(isdigit(ch)
+        if(isdigit(ch))
         {
             ist.unget();
             ist >> num;
