@@ -1,1 +1,1 @@
-bears: 17 cats 9 end
+bears: 17 elephants 9 end
