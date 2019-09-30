@@ -1,6 +1,7 @@
 #include "std_lib_facilities.h"
 
 void reading_numbers(string& name_file, vector<int>& numbers);
+int sum(vector<int>& numbers);
 
 
 int main()
@@ -11,10 +12,7 @@ int main()
     cout << "Enter a file name for reading numbers:\n";
     cin >> name_file;
     reading_numbers(name_file, numbers);
-    for(int x: numbers)
-    {
-        cout << x << " ";
-    }
+    cout << "The sum of all integers stored in a text file " << name_file << " is equal to -- " << sum(numbers) << '\n'; 
     return 0;
 }
 
@@ -39,4 +37,12 @@ void reading_numbers(string& name_file, vector<int>& numbers)
         else
             continue;
     }
+}
+
+int sum(vector<int>& numbers)
+{
+    int s = 0;
+    for(int x: numbers)
+        s += x;
+    return s;
 }
