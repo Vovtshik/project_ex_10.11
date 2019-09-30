@@ -1,6 +1,6 @@
 #include "std_lib_facilities.h"
 
-void reading_numbers(string name_file, vector<int>&numbers);
+void reading_numbers(string& name_file, vector<int>& numbers);
 
 
 int main()
@@ -18,7 +18,7 @@ int main()
     return 0;
 }
 
-void reading_numbers(string name_file, vector<int>&numbers)
+void reading_numbers(string& name_file, vector<int>& numbers)
 {
     ifstream ist(name_file);
     if(!ist) error("Unable to open input file ", name_file);
