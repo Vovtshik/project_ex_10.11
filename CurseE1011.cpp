@@ -7,7 +7,14 @@ int main()
 {
     setlocale(LC_ALL, "Rus");
     vector<int>numbers;
-    cout << "\n";
+    string name_file;
+    cout << "Enter a file name for reading numbers:\n";
+    cin >> name_file;
+    reading_numbers(name_file, numbers);
+    for(int x: numbers)
+    {
+        cout << x << " ";
+    }
     return 0;
 }
 
